@@ -9,7 +9,7 @@ Snapshot downloaded on 2026-09-23 from the public Lenco documentation sites.
 - [Current API reference index](api-docs/current/index.md) — 50 Markdown pages.
 - [API v2.0 reference index](api-docs/v2.0/index.md) — 38 Markdown pages.
 
-The support pages and API pages are also saved as individual local files. Article images hosted by Lenco/Intercom were downloaded to `support-articles/assets/` where available.
+Support articles are saved as individual Markdown files. API pages are also saved as Markdown. Article images hosted by Lenco/Intercom were downloaded to `support-articles/assets/` where available.
 
 ## Sources
 
