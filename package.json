@@ -1,0 +1,113 @@
+{
+  "name": "lenco",
+  "private": true,
+  "type": "module",
+  "imports": {
+    "#/*": "./src/*"
+  },
+  "scripts": {
+    "dev": "vp dev --port 3000",
+    "generate-routes": "tsr generate",
+    "build": "vp build",
+    "preview": "vp preview",
+    "lint": "vp lint",
+    "format": "vp fmt . && vp lint --fix",
+    "check": "vp fmt --check .",
+    "deploy": "pnpm run build && wrangler deploy",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
+    "db:pull": "drizzle-kit pull",
+    "db:studio": "drizzle-kit studio",
+    "prepare": "vp config"
+  },
+  "dependencies": {
+    "@better-auth/drizzle-adapter": "1.7.5",
+    "@cloudflare/ai-search-snippet": "^0.0.43",
+    "@faker-js/faker": "^10.6.0",
+    "@fontsource-variable/inter": "^5.3.0",
+    "@modelcontextprotocol/sdk": "^1.30.1",
+    "@orpc/client": "^1.15.4",
+    "@orpc/json-schema": "^1.15.4",
+    "@orpc/openapi": "^1.15.4",
+    "@orpc/server": "^1.15.4",
+    "@orpc/tanstack-query": "^1.15.4",
+    "@orpc/zod": "^1.15.4",
+    "@phosphor-icons/react": "^2.1.10",
+    "@t3-oss/env-core": "^0.13.11",
+    "@tailwindcss/vite": "^4.3.3",
+    "@tanstack/ai": "latest",
+    "@tanstack/ai-anthropic": "latest",
+    "@tanstack/ai-client": "latest",
+    "@tanstack/ai-gemini": "latest",
+    "@tanstack/ai-ollama": "latest",
+    "@tanstack/ai-openai": "latest",
+    "@tanstack/ai-react": "latest",
+    "@tanstack/match-sorter-utils": "latest",
+    "@tanstack/query-db-collection": "latest",
+    "@tanstack/react-db": "latest",
+    "@tanstack/react-devtools": "latest",
+    "@tanstack/react-form": "latest",
+    "@tanstack/react-query": "latest",
+    "@tanstack/react-query-devtools": "latest",
+    "@tanstack/react-router": "latest",
+    "@tanstack/react-router-devtools": "latest",
+    "@tanstack/react-router-ssr-query": "latest",
+    "@tanstack/react-start": "latest",
+    "@tanstack/react-store": "latest",
+    "@tanstack/react-table": "latest",
+    "@tanstack/store": "latest",
+    "better-auth": "^1.7.5",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "cn": "^0.4.0",
+    "drizzle-kit": "^1.0.0-rc.5-ab785fc",
+    "drizzle-orm": "^1.0.0-rc.5-ab785fc",
+    "highlight.js": "^11.12.0",
+    "lucide-react": "^1.47.0",
+    "radix-ui": "^1.6.7",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "shadcn": "^4.21.0",
+    "streamdown": "^2.6.0",
+    "tailwind-merge": "^3.7.0",
+    "tailwindcss": "^4.3.3",
+    "tw-animate-css": "^1.4.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.58.0",
+    "@inlang/paraglide-js": "^2.25.4",
+    "@rolldown/plugin-babel": "^0.2.4",
+    "@shadcn/lint": "^0.2.0",
+    "@tailwindcss/typography": "^0.5.20",
+    "@tanstack/devtools-event-client": "latest",
+    "@tanstack/devtools-vite": "latest",
+    "@tanstack/router-cli": "^1.167.38",
+    "@types/node": "^26.6.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "babel-plugin-react-compiler": "^1.0.0",
+    "tsx": "^4.23.15",
+    "typescript": "^6.0.3",
+    "vite": "catalog:",
+    "vite-plus": "catalog:",
+    "wrangler": "^4.137.0"
+  },
+  "engines": {
+    "node": ">=26"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.6.0",
+      "onFail": "download"
+    }
+  },
+  "intent": {
+    "skills": [
+      "*"
+    ]
+  }
+}

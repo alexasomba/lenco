@@ -1,0 +1,45 @@
+# Lenco API Documentation
+
+> Documentation for Lenco API
+
+Append .md to any documentation page URL to get its markdown version.
+
+## API Reference
+- [Welcome to Lenco's API doc](https://lenco-api.readme.io/v2.0/reference/introduction.md)
+- [Getting Started](https://lenco-api.readme.io/v2.0/reference/get-started.md): This page will help you get started with Lenco API
+- [Accept Payments](https://lenco-api.readme.io/v2.0/reference/accept-payments.md)
+- [Test Cards and Accounts](https://lenco-api.readme.io/v2.0/reference/test-cards-and-accounts.md)
+- [/accounts](https://lenco-api.readme.io/v2.0/reference/get-accounts.md): Retrieve information about your bank accounts
+- [/accounts/:id](https://lenco-api.readme.io/v2.0/reference/get-account-by-id.md): Retrieve information about a specific bank account
+- [/accounts/:id/balance](https://lenco-api.readme.io/v2.0/reference/get-account-balance.md): Retrieve account balance of a specific bank account
+- [/banks](https://lenco-api.readme.io/v2.0/reference/get-banks.md): Get list of banks and financial institutions
+- [/resolve/bank-account](https://lenco-api.readme.io/v2.0/reference/resolve-bank-account.md): Verify/resolve account details
+- [/resolve/mobile-money](https://lenco-api.readme.io/v2.0/reference/resolve-mobile-money-account.md)
+- [/resolve/lenco-money](https://lenco-api.readme.io/v2.0/reference/resolve-lenco-money-account.md)
+- [/resolve/lenco-merchant](https://lenco-api.readme.io/v2.0/reference/resolve-lenco-merchant-account.md)
+- [/transfer-recipients](https://lenco-api.readme.io/v2.0/reference/get-transfer-recipients.md): Retrieve information about all your transfer recipients
+- [/transfer-recipients/:id](https://lenco-api.readme.io/v2.0/reference/get-transfer-recipient-by-id.md): Retrieve information about a specific transfer recipient
+- [/transfer-recipients/bank-account](https://lenco-api.readme.io/v2.0/reference/create-transfer-recipient-as-bank-account.md): Create transfer recipient as a bank account
+- [/transfer-recipients/mobile-money](https://lenco-api.readme.io/v2.0/reference/create-transfer-recipient-as-mobile-money.md): Create transfer recipient as a mobile money
+- [/transfer-recipients/lenco-money](https://lenco-api.readme.io/v2.0/reference/create-transfer-recipient-as-lenco-money.md): Create transfer recipient as a bank account
+- [/transfer-recipients/lenco-merchant](https://lenco-api.readme.io/v2.0/reference/create-transfer-recipient-as-lenco-merchant.md): Create transfer recipient as a bank account
+- [/transfers](https://lenco-api.readme.io/v2.0/reference/get-transfers.md): Retrieve information about your transfers
+- [/transfers/:id](https://lenco-api.readme.io/v2.0/reference/get-transfer-by-id.md): Retrieve information about a specific transfer
+- [/transfers/status/:reference](https://lenco-api.readme.io/v2.0/reference/get-transfer-by-reference.md): Retrieve information about a specific transfer using the reference you used when initiating the transfer
+- [/transfers/bank-account](https://lenco-api.readme.io/v2.0/reference/initiate-transfer-to-bank-account.md): Initiate transfer to a bank account
+- [/transfers/mobile-money](https://lenco-api.readme.io/v2.0/reference/initiate-transfer-to-mobile-money.md): Initiate transfer to a mobile money account. Currently supporting only Malawi and Zambia
+- [/transfers/lenco-money](https://lenco-api.readme.io/v2.0/reference/initiate-transfer-to-lenco-money.md)
+- [/transfers/lenco-merchant](https://lenco-api.readme.io/v2.0/reference/initiate-transfer-to-lenco-merchant.md)
+- [/transfers/account](https://lenco-api.readme.io/v2.0/reference/initiate-transfer-to-account.md): Initiate a transfer to one of your accounts
+- [/collections](https://lenco-api.readme.io/v2.0/reference/get-collections.md)
+- [/collections/:id](https://lenco-api.readme.io/v2.0/reference/get-collection-by-id.md): Retrieve information about a specific collection request
+- [/collections/status/:reference](https://lenco-api.readme.io/v2.0/reference/get-collection-by-reference.md): Retrieve information about a specific collection request using the reference of the request
+- [/collections/mobile-money](https://lenco-api.readme.io/v2.0/reference/initiate-collection-from-mobile-money.md)
+- [/collections/card](https://lenco-api.readme.io/v2.0/reference/initiate-collection-from-card.md)
+- [/settlements](https://lenco-api.readme.io/v2.0/reference/get-settlements.md): Retrieve information about all your collection settlements
+- [/settlements/:id](https://lenco-api.readme.io/v2.0/reference/get-settlement-by-id.md): Retrieve information about a specific settlement
+- [/transactions](https://lenco-api.readme.io/v2.0/reference/get-transactions.md): Get transactions that occurred on your accounts
+- [/transactions/:id](https://lenco-api.readme.io/v2.0/reference/get-transaction-by-id.md): Retrieve information about a specific transaction
+- [Webhooks](https://lenco-api.readme.io/v2.0/reference/webhooks.md): Learn how to listen to events whenever certain actions occur on your integration.
+- [Encryption](https://lenco-api.readme.io/v2.0/reference/encryption.md)
+- [/encryption-key](https://lenco-api.readme.io/v2.0/reference/get-encryption-key.md): Get RSA public key to [encrypt a request payload](https://lenco-api.readme.io/v2.0/reference/encryption)

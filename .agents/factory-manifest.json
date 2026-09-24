@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "rootPolicy": "AGENTS.md",
+  "rootPolicyMaxLines": 125,
+  "skillRoot": ".agents/skills",
+  "lifecycleStages": ["isolate", "build", "prove", "ship"],
+  "skills": [
+    {
+      "id": "automaticpallet",
+      "path": ".agents/skills/automaticpallet/SKILL.md",
+      "kind": "repo-owned",
+      "stages": ["isolate", "build", "prove", "ship"],
+      "sources": ["AGENTS.md", ".agents/factory-manifest.json", "package.json"]
+    },
+    {
+      "id": "automaticpallet-viteplus-workflow",
+      "path": ".agents/skills/automaticpallet-viteplus-workflow/SKILL.md",
+      "kind": "preset-managed",
+      "stages": ["isolate", "ship"],
+      "sources": [".agents/workflow-manifest.json"]
+    },
+    {
+      "id": "automaticpallet-feature-architecture",
+      "path": ".agents/skills/automaticpallet/automaticpallet-feature-architecture/SKILL.md",
+      "kind": "repo-owned",
+      "stages": ["build", "prove"],
+      "sources": [
+        "reference:consolidated AutomaticPallet feature architecture guidance",
+        "reference:https://github.com/michaelshimeles/skills/tree/main/code-structure"
+      ]
+    },
+    {
+      "id": "automaticpallet-query-and-loader-patterns",
+      "path": ".agents/skills/automaticpallet/automaticpallet-query-and-loader-patterns/SKILL.md",
+      "kind": "repo-owned",
+      "stages": ["build", "prove"],
+      "sources": [
+        "reference:consolidated AutomaticPallet query and loader guidance"
+      ]
+    },
+    {
+      "id": "automaticpallet-core-boundaries",
+      "path": ".agents/skills/automaticpallet/automaticpallet-core-boundaries/SKILL.md",
+      "kind": "repo-owned",
+      "stages": ["build", "prove"],
+      "sources": [
+        "reference:consolidated AutomaticPallet core boundary guidance"
+      ]
+    },
+    {
+      "id": "automaticpallet-ui-guidelines",
+      "path": ".agents/skills/automaticpallet/automaticpallet-ui-guidelines/SKILL.md",
+      "kind": "repo-owned",
+      "stages": ["build", "prove"],
+      "sources": ["reference:consolidated AutomaticPallet UI guidance"]
+    },
+    {
+      "id": "automaticpallet-choice-flows",
+      "path": ".agents/skills/automaticpallet/automaticpallet-choice-flows/SKILL.md",
+      "kind": "repo-owned",
+      "stages": ["isolate", "build", "prove", "ship"],
+      "sources": ["reference:consolidated AutomaticPallet choice-flow guidance"]
+    },
+    {
+      "id": "storefront-seo",
+      "path": ".agents/skills/storefront-seo/SKILL.md",
+      "kind": "existing-canonical",
+      "stages": ["build", "prove"],
+      "sources": ["reference:consolidated storefront SEO guidance"]
+    },
+    {
+      "id": "automaticpallet-typescript",
+      "path": ".agents/skills/automaticpallet/automaticpallet-typescript/SKILL.md",
+      "kind": "repo-owned",
+      "stages": ["build", "prove"],
+      "sources": ["reference:consolidated AutomaticPallet TypeScript guidance"]
+    },
+    {
+      "id": "automaticpallet-data-migrations",
+      "path": ".agents/skills/automaticpallet/automaticpallet-data-migrations/SKILL.md",
+      "kind": "repo-owned",
+      "stages": ["build", "prove"],
+      "sources": [
+        "package.json",
+        "packages/automaticpallet/data-ops/package.json",
+        "packages/clearaccess/data-ops/package.json",
+        "packages/rentshortlet/data-ops/package.json",
+        "reference:product-scoped D1 migration policy"
+      ]
+    },
+    {
+      "id": "automaticpallet-evidence-driven-testing",
+      "path": ".agents/skills/automaticpallet/automaticpallet-evidence-driven-testing/SKILL.md",
+      "kind": "repo-owned",
+      "stages": ["prove", "ship"],
+      "sources": [
+        "reference:https://github.com/michaelshimeles/skills/tree/main/evidence-driven-testing",
+        "reference:https://github.com/michaelshimeles/skills/tree/main/before-and-after"
+      ]
+    },
+    {
+      "id": "automaticpallet-writing-for-humans",
+      "path": ".agents/skills/automaticpallet/automaticpallet-writing-for-humans/SKILL.md",
+      "kind": "repo-owned",
+      "stages": ["isolate", "build", "prove", "ship"],
+      "sources": [
+        "reference:https://github.com/michaelshimeles/skills/tree/main/unslop"
+      ]
+    }
+  ],
+  "redirects": [],
+  "runtimeSkills": {
+    "paths": [
+      "apps/*/user-web/src/lib/agent-readiness.ts",
+      "apps/*/user-web/src/routes/.well-known/agent-skills/**"
+    ],
+    "separateFromDeveloperSkills": true
+  }
+}

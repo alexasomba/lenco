@@ -1,0 +1,38 @@
+{
+  "projectName": "lenco",
+  "mode": "file-router",
+  "typescript": true,
+  "packageManager": "pnpm",
+  "includeExamples": false,
+  "tailwind": true,
+  "projectPreset": "default",
+  "addOnOptions": {
+    "drizzle": {
+      "database": "sqlite"
+    }
+  },
+  "git": true,
+  "install": true,
+  "intent": true,
+  "routerOnly": false,
+  "version": 1,
+  "framework": "react",
+  "chosenAddOns": [
+    "eslint",
+    "cloudflare",
+    "ai",
+    "compiler",
+    "db",
+    "drizzle",
+    "form",
+    "mcp",
+    "oRPC",
+    "paraglide",
+    "shadcn",
+    "t3env",
+    "table",
+    "better-auth",
+    "store",
+    "tanstack-query"
+  ]
+}

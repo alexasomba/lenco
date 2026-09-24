@@ -1,0 +1,10 @@
+{
+  "preset": "automaticpallet-viteplus-workflow",
+  "tag": "v1.0.0-rc.1",
+  "commit": "fab781ce7ef062ca6e893de67a75671484b05923",
+  "installerVersion": "1.0.0-rc.1",
+  "hashes": {
+    "SKILL.md": "76f004bf7fd6434da43bc3d573d49183ca65779a7af7b80707572fb5cc6d357f",
+    "workflow-manifest.json": "20ffe7cf701ad167caf2bea30470d3e4e010914240e27541e9d02a0b24235eed"
+  }
+}
