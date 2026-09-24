@@ -534,6 +534,15 @@ a {
   --search-snippet-focus-ring: #1e37f6;
 }
 
+.chat-bubble-host {
+  --search-snippet-primary-color: #1e37f6;
+  --search-snippet-primary-hover: #41bdfb;
+  --search-snippet-focus-ring: #1e37f6;
+  --search-snippet-width: 0px;
+  --search-snippet-max-width: 0px;
+  --search-snippet-min-width: 0px;
+}
+
 .site-footer__inner {
   display: grid;
   grid-template-columns: 1fr auto;

@@ -2,10 +2,6 @@ import { createFileRoute } from '@tanstack/react-router'
 
 import { SiteFooter, SiteHeader } from '#/components/site-chrome'
 
-if (!import.meta.env.SSR) {
-  void import('@cloudflare/ai-search-snippet')
-}
-
 export const Route = createFileRoute('/')({ component: Home })
 
 function Home() {

@@ -1,7 +1,9 @@
 import {
   HeadContent,
+  Outlet,
   Scripts,
   createRootRouteWithContext,
+  useRouterState,
 } from '@tanstack/react-router'
 import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
 import { TanStackDevtools } from '@tanstack/react-devtools'
@@ -13,6 +15,10 @@ import { getLocale } from '#/paraglide/runtime'
 import appCss from '../styles.css?url'
 
 import type { QueryClient } from '@tanstack/react-query'
+
+if (!import.meta.env.SSR) {
+  void import('@cloudflare/ai-search-snippet')
+}
 
 interface MyRouterContext {
   queryClient: QueryClient
@@ -51,8 +57,28 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
       },
     ],
   }),
+  component: RootLayout,
   shellComponent: RootDocument,
 })
+
+function RootLayout() {
+  const pathname = useRouterState({
+    select: (state) => state.location.pathname,
+  })
+
+  return (
+    <>
+      <Outlet />
+      {pathname !== '/' && (
+        <chat-bubble-snippet
+          api-url="https://lenco.theworkflow.dev/"
+          className="chat-bubble-host"
+          hide-branding="true"
+        />
+      )}
+    </>
+  )
+}
 
 function RootDocument({ children }: { children: React.ReactNode }) {
   return (
