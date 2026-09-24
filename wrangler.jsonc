@@ -4,4 +4,11 @@
   "compatibility_date": "2026-09-02",
   "compatibility_flags": ["nodejs_compat"],
   "main": "@tanstack/react-start/server-entry",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "lenco-db",
+      "database_id": "8dc75b35-13a6-479a-94a7-58b3101515b3",
+    },
+  ],
 }

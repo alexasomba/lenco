@@ -365,14 +365,17 @@ a {
 }
 
 .site-footer {
+  flex: 0 0 auto;
   border-top: 1px solid var(--line);
   background: color-mix(in oklab, var(--header-bg) 84%, transparent 16%);
 }
 
 .site-shell {
   display: flex;
+  height: 100dvh;
   min-height: 100dvh;
   flex-direction: column;
+  overflow: hidden;
   color: var(--sea-ink);
   background:
     radial-gradient(850px 440px at 50% 20%, var(--hero-a), transparent 66%),
@@ -399,6 +402,7 @@ a {
 .site-header {
   position: sticky;
   top: 0;
+  flex: 0 0 auto;
   border-bottom: 1px solid var(--line);
   background: var(--header-bg);
   backdrop-filter: blur(16px);
@@ -498,27 +502,33 @@ a {
 .support-main {
   display: flex;
   flex: 1;
-  align-items: center;
+  min-height: 0;
+  align-items: stretch;
   padding: 0;
 }
 
 .support-main__inner {
   display: flex;
   width: 100%;
+  height: 100%;
+  min-height: 0;
   max-width: none;
   margin: 0;
-  align-items: center;
-  justify-content: center;
+  align-items: stretch;
 }
 
 .support-widget {
   width: 100%;
+  height: 100%;
+  min-height: 0;
   scroll-margin-top: 0;
 }
 
 .support-widget chat-page-snippet {
   display: block;
   width: 100%;
+  height: 100%;
+  min-height: 0;
   --search-snippet-primary-color: #1e37f6;
   --search-snippet-primary-hover: #41bdfb;
   --search-snippet-focus-ring: #1e37f6;
